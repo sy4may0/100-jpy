@@ -6,14 +6,11 @@ mixin post(post)
 		p.lead.text-muted Posted 
 			if post.publishedDate
 				| on #{post._.publishedDate.format('MMMM Do, YYYY')} 
+		p.lead.text-muted Category:
 			if post.categories && post.categories.length
-				| in 
 				each cat, i in post.categories
-					a(href='/blog/' + cat.key)= cat.name
-					if i < post.categories.length - 1
-						| , 
-					else
-						|  
+					span.label.label-default: a(href='/blog/' + cat.key)= cat.name
+		p.lead.text-muted Author:
 			if post.author
 				| by #{post.author.name.first}
 		if post.image.exists

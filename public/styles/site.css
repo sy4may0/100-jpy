@@ -5821,12 +5821,15 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+body {
+  background-color: #353535; }
+
 #header {
   margin-top: 30px; }
 
 #footer {
   margin-top: 30px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #adff2f;
   padding-top: 30px;
   color: #777777; }
 
@@ -5834,3 +5837,48 @@ button.close {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.navbar-default {
+  background-color: #252525;
+  border-color: #adff2f;
+  border-radius: 1px; }
+
+.navbar-default .navbar-brand {
+  font-family: Consolas;
+  color: #adff2f; }
+
+.navbar-default .navbar-nav li:hover {
+  background-color: #adff2f; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #adff2f; }
+
+.container .jumbotron {
+  background-color: #252525;
+  color: #BBBBBB;
+  border-radius: 1px; }
+
+.container .jumbotron h1 {
+  font-family: Consolas;
+  color: #adff2f; }
+
+.container .jumbotron hr {
+  color: #adff2f;
+  border-color: #adff2f; }
+
+.container .jumbotron .description {
+  margin-left: 1em;
+  margin-bottom: 3em; }
+
+.container .jumbotron .author .authoricon {
+  width: 120px;
+  height: 120px; }
+
+.container .jumbotron .author .authordescription p {
+  font-size: small;
+  margin: 0; }
+
+.container .jumbotron .author .authordescription a {
+  color: #9acd32; }
