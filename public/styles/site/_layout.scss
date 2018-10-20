@@ -3,11 +3,12 @@ $color_accent_f-1: #9acd32;
 $color_text_f0: #FFFFFF;
 $color_text_f1: #BBBBBB;
 $color_text_f2: #AAAAAA;
+$color_text_f3: #999999;
 
 $background-color: #353535;
 $background-color-f1: #252525;
 
-
+/// default setting
 body {
 	background-color: $background-color;
 }
@@ -29,6 +30,49 @@ body {
     height: auto;
 }
 
+.text-muted {
+    color: $color_text_f2;
+}
+
+h1 {
+	color: $color_text_f2;
+}
+
+h2 {
+	color: $color_text_f3;
+}
+
+h5 {
+	color: $color_text_f3;
+}
+
+.text-weight-normal {
+	color: $color_text_f3;
+}
+
+.badge {
+	color: $color_text_f2;
+	background-color: transparent;
+	border: 1px solid;
+	border-color: $color_accent;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+	
+}
+
+.btn {
+	color: $background_color_f1;
+	background-color: $color_accent;
+	border: 1px solid $color_accent;
+	
+}
+
+.btn:hover {
+	color: $background_color_f1;
+	background-color: $color_accent_f-1;
+	border: 1px solid $color_accent;
+}
 /////////////////////////////////////////////////////////////
 // index.pug configure.
 /////////////////////////////////////////////////////////////
@@ -42,7 +86,7 @@ body {
 }
 
 .navbar-default .navbar-brand {
-	font-family: Consolas;
+	font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
 	color: $color_accent;
 }
 
@@ -54,6 +98,20 @@ body {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	background-color: $color_accent;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: $color_accent;
+}
+
+.navbar-default .navbar-toggle { 
+	border-color: $color_accent;	
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+	background-color: $color_accent;	
 }
 ////
 
@@ -94,4 +152,89 @@ body {
 	
 }
 //
+///////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////
+// blog.pug configure
+///////////////////////////////////////////////////////////
+
+// post class configure
+.post h2 a{
+	color: $color_accent;
+}
+
+.post {
+    color: $color_text_f1;
+    margin-bottom: 24px;
+}
+
+.postcard {
+	background-color: $background_color_f1;
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 1px;
+}
+
+.post .lead {
+	margin-bottom: 5px;
+	
+}
+	
+.list-group-item {
+
+}
+
+a.list-group-item, button.list-group-item {
+	color: $color_text_f1;
+	background-color: $background-color-f1;
+	border-color: $color_accent;
+	
+}
+
+a.list-group-item:hover, a.list-group-item:focus,
+button.list-group-item:hover, button.list-group-item:focus {
+	background-color: $color_accent
+}
+
+.list-group-item.active, .list-group-item.active:hover,
+.list-group-item.active:focus {
+	background-color: $color_accent;
+	border-color: $color_accent;
+	color: $background-color-f1;
+}
+
+///////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////
+// post.pug configure.
+///////////////////////////////////////////////////////////
+article hr {
+	border-color: $color_accent;
+}
+
+article a {
+	color: $color_accent_f-1;
+}
+
+///////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////
+// contact.pug configure.
+///////////////////////////////////////////////////////////
+label {
+	color: $color_text_f2;
+}
+
+input.form-control, textarea.form-control{
+	background-color: $background_color_f1;
+	color: $color_text_f1;
+	border: 1px solid $color_accent;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background-color: $background_color_f1;
+}
 ///////////////////////////////////////////////////////////

@@ -5838,13 +5838,47 @@ body {
   max-width: 100%;
   height: auto; }
 
+.text-muted {
+  color: #AAAAAA; }
+
+h1 {
+  color: #AAAAAA; }
+
+h2 {
+  color: #999999; }
+
+h5 {
+  color: #999999; }
+
+.text-weight-normal {
+  color: #999999; }
+
+.badge {
+  color: #AAAAAA;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #adff2f;
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-right: 2px; }
+
+.btn {
+  color: #252525;
+  background-color: #adff2f;
+  border: 1px solid #adff2f; }
+
+.btn:hover {
+  color: #252525;
+  background-color: #9acd32;
+  border: 1px solid #adff2f; }
+
 .navbar-default {
   background-color: #252525;
   border-color: #adff2f;
   border-radius: 1px; }
 
 .navbar-default .navbar-brand {
-  font-family: Consolas;
+  font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
   color: #adff2f; }
 
 .navbar-default .navbar-nav li:hover {
@@ -5853,6 +5887,17 @@ body {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #adff2f; }
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #adff2f; }
+
+.navbar-default .navbar-toggle {
+  border-color: #adff2f; }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
   background-color: #adff2f; }
 
 .container .jumbotron {
@@ -5882,3 +5927,53 @@ body {
 
 .container .jumbotron .author .authordescription a {
   color: #9acd32; }
+
+.post h2 a {
+  color: #adff2f; }
+
+.post {
+  color: #BBBBBB;
+  margin-bottom: 24px; }
+
+.postcard {
+  background-color: #252525;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 1px; }
+
+.post .lead {
+  margin-bottom: 5px; }
+
+a.list-group-item, button.list-group-item {
+  color: #BBBBBB;
+  background-color: #252525;
+  border-color: #adff2f; }
+
+a.list-group-item:hover, a.list-group-item:focus,
+button.list-group-item:hover, button.list-group-item:focus {
+  background-color: #adff2f; }
+
+.list-group-item.active, .list-group-item.active:hover,
+.list-group-item.active:focus {
+  background-color: #adff2f;
+  border-color: #adff2f;
+  color: #252525; }
+
+article hr {
+  border-color: #adff2f; }
+
+article a {
+  color: #9acd32; }
+
+label {
+  color: #AAAAAA; }
+
+input.form-control, textarea.form-control {
+  background-color: #252525;
+  color: #BBBBBB;
+  border: 1px solid #adff2f; }
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: #252525; }
