@@ -1,0 +1,26 @@
+extends ../layouts/default
+
+block content
+	.container: .row: .col-sm-12.col-sm-offset-0.col-md-10.col-md-offset-1
+		.image
+			p: a(href='/gallery') &larr; back to the gallery
+			if !data.image
+				h2 Invalid Request Image.
+			else
+				.image
+					hr
+					h1= data.image.name
+					.pull-right
+						a(rel="license", href="http://creativecommons.org/licenses/by/4.0/")
+							img(alt="クリエイティブ・コモンズ・ライセンス", src="https://i.creativecommons.org/l/by/4.0/88x31.png")
+					h5 Image uploaded 
+						if data.image.publishedDate
+							| on #{data.image._.publishedDate.format('MMMM Do, YYYY')} 
+					if data.image.Image.exists
+						img(src=data.image._.Image.limit(1920,0)).img-responsive
+				hr
+				h3 Comment
+				.description 
+					.text
+						!= data.image.description
+				
