@@ -15,14 +15,18 @@ exports = module.exports = function (req, res) {
 	
 	// Load the Author
 	view.on('init', function (next) {
-		keystone.list('User').model.find().exec(function (err, result) {
+		keystone.list('User').model.find({
+			isShowHome: true
+		}).exec(function (err, result) {
 			locals.data.authors = result;
 			next(err);
 		});
 	});	
 	
 	view.on('init', function (next) {
-		keystone.list('TopPage').model.find().exec(function (err, result) {
+		keystone.list('TopPage').model.find({
+			isShowHome: true
+		}).exec(function (err, result) {
 			locals.data.toppages = result;
 			next(err);
 		});

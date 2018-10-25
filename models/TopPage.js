@@ -13,7 +13,7 @@ var TopPage = new keystone.List('TopPage', {
 TopPage.add({
 	name: { type: String, required: true },
 	text: { type: Types.Html, wysiwyg: true},
-	showUp: { type: Boolean }
+	isShowHome: { type: Boolean }
 });
 
 TopPage.register();
