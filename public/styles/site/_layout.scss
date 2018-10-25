@@ -7,6 +7,7 @@ $color_text_f3: #999999;
 
 $background-color: #353535;
 $background-color-f1: #252525;
+$background-color_f1_t: rgba(37,37,37,0.7);
 
 /// default setting
 body {
@@ -144,6 +145,7 @@ h5 {
     background-color: $background-color-f1;    	
     color: $color_text_f1;
     border-radius: 1px;
+    overflow: auto;
 }
 
 .container .jumbotron h1 {
@@ -160,20 +162,24 @@ h5 {
 	margin-left: 1em;
 	margin-bottom: 3em;
 }
-.container .jumbotron .author .authoricon {
-	width: 120px;
-	height: 120px;
+
+.container .jumbotron .author .icon{
+	float: left;
 }
 
-.container .jumbotron .author .authordescription p{
+.container .jumbotron .author .userinfo{
+	margin-left: 10px;
+	float: left;
+}
+
+.container .jumbotron .author .description p{
 	font-size: small;
-	margin: 0;
+	margin: 2px;
+}
+.container .jumbotron .author .description a{
+	color: $color_accent_f-1;
 }
 
-.container .jumbotron .author .authordescription a{
-	color: $color_accent_f-1;
-	
-}
 //
 ///////////////////////////////////////////////////////////
 
@@ -281,6 +287,22 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	color: $color_text_f3;
 	background-color: $background-color;
 }	
+
+.r18pileup {
+	position: relative;
+}
+
+.r18pileup p {
+	font-size: 80px;
+	color: $color_text_f3;
+	position: absolute;
+	left: 60px;
+	top: 22px;
+	background-color: $background-color_f1_t;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 5px;
+}
 
 //////////////////////////////////////////////////////////
 

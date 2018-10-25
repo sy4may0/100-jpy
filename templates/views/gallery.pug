@@ -11,15 +11,23 @@ block content
 				each gallery in galleries
 					.col-xs-6.col-sm-4.col-md-3.card(style="width: 300px")
 						if gallery.r18
-							a.btn.btn-dark.r18img(href='#', role="button") R18
-						else
-							a(href='#') 
 							if gallery.Sumnail.exists
-								img.card-img-top(src=gallery._.Sumnail.limit(300,0), alt="Card image cap").img-rounded
+								a(href='/gallery/image/' + gallery.key) 
+									.r18pileup
+										img.card-img-top(src=gallery._.Sumnail.limit(300,0), alt="Card image cap").img-rounded
+										p R18
 							else
-								img.card-img-top(src=gallery._.Image.limit(300,0), alt="Card image cap").img-rounded
+								a.btn.btn-dark.r18img(href='/gallery/image/' + gallery.key) R18
+						else
+							a(href='/gallery/image/' + gallery.key) 
+								if gallery.Sumnail.exists
+									img.card-img-top(src=gallery._.Sumnail.limit(300,0), alt="Card image cap").img-rounded
+								else
+									img.card-img-top(src=gallery._.Image.limit(300,0), alt="Card image cap").img-rounded
 						.card-body
-							h4.lead.text-muted= gallery.name
+							h4.lead.text-muted= gallery.name 
+								if gallery.r18
+									|  [R18]
 							if gallery.publishedDate
 								.pull-right.text-muted= gallery._.publishedDate.format('Do MMM YYYY')
 							a.btn.btn-dark(href='/gallery/image/' + gallery.key, role="button") Open 

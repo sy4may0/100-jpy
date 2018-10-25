@@ -5921,7 +5921,8 @@ h5 {
 .container .jumbotron {
   background-color: #252525;
   color: #BBBBBB;
-  border-radius: 1px; }
+  border-radius: 1px;
+  overflow: auto; }
 
 .container .jumbotron h1 {
   font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
@@ -5935,15 +5936,18 @@ h5 {
   margin-left: 1em;
   margin-bottom: 3em; }
 
-.container .jumbotron .author .authoricon {
-  width: 120px;
-  height: 120px; }
+.container .jumbotron .author .icon {
+  float: left; }
 
-.container .jumbotron .author .authordescription p {
+.container .jumbotron .author .userinfo {
+  margin-left: 10px;
+  float: left; }
+
+.container .jumbotron .author .description p {
   font-size: small;
-  margin: 0; }
+  margin: 2px; }
 
-.container .jumbotron .author .authordescription a {
+.container .jumbotron .author .description a {
   color: #9acd32; }
 
 .post h2 a {
@@ -6010,6 +6014,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .r18img:hover, .r18img:focus {
   color: #999999;
   background-color: #353535; }
+
+.r18pileup {
+  position: relative; }
+
+.r18pileup p {
+  font-size: 80px;
+  color: #999999;
+  position: absolute;
+  left: 60px;
+  top: 22px;
+  background-color: rgba(37, 37, 37, 0.7);
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px; }
 
 .image .description {
   background-color: #252525; }

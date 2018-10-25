@@ -4,20 +4,14 @@ block content
 	.container: .jumbotron
 		h1 > 100(JPY)
 		hr
-		p 当ブログでは技術的な話をします。
-		p ついでに絵をかきます。
-		p # 備忘録目的のため内容の正確性は保証できません。
+		each toppage in data.toppages
+			!= toppage.text
 		hr
-		.author.row
-			.col-sm-6
-			.col-sm-2
-				img.authoricon(src="https://i.imgur.com/DGmLof5.png")
-			.col-sm-4
-				h4 Author: @sy4may0
-				hr
-				.authordescription
-					p 不幸にもITゼネコンに追突したインフラエンジニア。
-					ul.links
-					p Twitter: 
-						a(href="https://twitter.com/sy4may0", target="_brank") twitter.com/sy4may0
-			
+		each author in data.authors
+			.author.row.col-sm-10
+				.icon
+					img.icon(src=author._.icon.limit(100,100), alt="Card image cap").img-rounded
+				.userinfo
+					h4 Author: #{author.name}
+					.description
+						!= author.description
