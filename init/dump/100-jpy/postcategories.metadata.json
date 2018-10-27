@@ -1,1 +1,0 @@
-{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"100-jpy.postcategories"},{"v":2,"unique":true,"key":{"key":1},"name":"key_1","ns":"100-jpy.postcategories","background":true}],"uuid":"44ec7a7028664a02b67afb2226a8dfd8"}
