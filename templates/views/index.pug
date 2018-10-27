@@ -12,6 +12,6 @@ block content
 				.icon
 					img.icon(src=author._.icon.limit(100,100), alt="Card image cap").img-rounded
 				.userinfo
-					h4 Author: #{author.name}
+					h4 Author: #{author.name.first}
 					.description
 						!= author.description
