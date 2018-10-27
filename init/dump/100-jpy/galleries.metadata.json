@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"100-jpy.galleries"},{"v":2,"unique":true,"key":{"key":1},"name":"key_1","ns":"100-jpy.galleries","background":true}],"uuid":"e0af8ff6d1e04aa88a685c0cdd910c8e"}
