@@ -9,4 +9,4 @@ mongo_url=${mongo_url##*/}
 mongo_db=${mongo_conf##*/}
 
 cmd="mongoimport --host ${mongo_url} --db ${mongo_db} --collection user --drop --file ${SCRIPT_DIR}/init.json"
-echo $cmd
+eval $cmd
