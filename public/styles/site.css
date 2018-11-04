@@ -5987,6 +5987,12 @@ article hr {
 article a {
   color: #9acd32; }
 
+article img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%; }
+
 label {
   color: #AAAAAA; }
 
