@@ -5919,7 +5919,8 @@ h5 {
   background-color: #252525;
   color: #BBBBBB;
   border-radius: 1px;
-  overflow: auto; }
+  overflow: auto;
+  padding: 10px; }
 
 .container .jumbotron h1 {
   font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
