@@ -5994,6 +5994,9 @@ article img {
   max-width: 100%;
   max-height: 100%; }
 
+article pre {
+  background-color: #252525 !important; }
+
 label {
   color: #AAAAAA; }
 
